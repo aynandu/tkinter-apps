@@ -1,0 +1,38 @@
+#don't pack when you use grid
+from tkinter import *
+root=Tk()
+
+lbl_Title=Label(root,text="Registration Form")
+lbl_Usr_Name=Label(root,text="UserName :")
+lbl_Mob=Label(root,text="Mobile No :")
+lab_Email=Label(root,text="Email ID:")
+lab_Age=Label(root,text="Age :")
+lab_Pwd=Label(root,text="Password :")
+lab_CnPwd=Label(root,text="Confirm Password")
+
+ent_UsrNm=Entry(root)
+ent_Mob=Entry(root)
+ent_Email=Entry(root)
+ent_Age=Entry(root)
+ent_Pwd=Entry(root)
+ent_Cnpwd=Entry(root)
+
+btn_Lgn=Button(root,text="Login",fg="blue",bg="gray")
+btn_cncl=Button(root,text="Cancel",fg="blue",bg="cyan")
+
+lbl_Title.grid(row=0,column=0)
+lbl_Usr_Name.grid(row=1,column=0)
+ent_UsrNm.grid(row=1,column=1)
+lbl_Mob.grid(row=2,column=0)
+ent_Mob.grid(row=2,column=1)
+lab_Email.grid(row=3,column=0)
+ent_Email.grid(row=3,column=1)
+lab_Age.grid(row=4,column=0)
+ent_Age.grid(row=4,column=1)
+lab_Pwd.grid(row=5,column=0)
+ent_Pwd.grid(row=5,column=1)
+lab_CnPwd.grid(row=6,column=0)
+ent_Cnpwd.grid(row=6,column=1)
+btn_Lgn.grid(row=7,column=1)
+btn_cncl.grid(row=7,column=0)
+root.mainloop()
